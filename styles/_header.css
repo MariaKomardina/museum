@@ -60,3 +60,44 @@
   color: var(--goldDark-color);
 }
 
+.navigation__burger {
+  display: none;
+  width: 32px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger__line {
+  display: block;
+  height: 2px;
+  background-color: var(--white-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation__list {
+    display: none;
+  }
+
+  .header__container {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .navigation__burger {
+    display: block;
+  }  
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 420px) {
+
+}
+

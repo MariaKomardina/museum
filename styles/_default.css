@@ -69,7 +69,25 @@ h1, h2, h3, p {
 }
 
 .container {
-  max-width: calc(100vw - ((100vw - 1440px) / 2));
+  max-width: calc(100vw - ((100vw - var(--container)) / 2));
   padding: 0 var(--padding-container);
   margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --padding-container: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --container: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container: 768px;
+  }
 }
