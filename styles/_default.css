@@ -1,4 +1,18 @@
 :root {
+  --container: 1440px;
+
+  --padding-container: 25px;
+
+  --white-color: #FFF;
+  --grayLite-color: #B3B3B3;
+  --gray-color: #999999;
+  --bgDark-color: #030303;
+  --black-color: #000;
+  --goldLite-color: #CAAA7D;
+  --goldMeadle-color: #D2B183;
+  --gold-color: #9D8665;
+  --goldDark-color: #7E6C51;
+  --purpure-color: #710707;
 
 }
 
@@ -7,14 +21,19 @@ html {
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
 body {
   font-family: Roboto;
+  min-height: 100vh;
+  min-width: 320px;
 }
 
 img, svg {
@@ -38,6 +57,7 @@ a {
 
 ul {
   list-style: none;
+  padding-inline-start: 0;
 }
 
 li {
@@ -46,4 +66,10 @@ li {
 
 h1, h2, h3, p {
   margin: 0;
+}
+
+.container {
+  max-width: calc(100vw - ((100vw - 1440px) / 2));
+  padding: 0 var(--padding-container);
+  margin: 0 auto;
 }
