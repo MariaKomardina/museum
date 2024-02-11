@@ -5,12 +5,14 @@
 }
 
 .welcome {
-  background-image: url('./../assets/img/monalisa.png');
+  /* background-image: url('./../assets/img/Mona.jpg'); */
+  background: linear-gradient(90.00deg, rgb(3, 3, 3),rgba(3, 3, 3, 1) 35.194%,rgba(3, 3, 3, 0) 60.729%),url('./../assets/img/Mona.jpg');
   background-repeat: no-repeat;
   min-height: 750px;
   background-position: calc(100% - 20px) calc(100% - 0px);
   background-size: contain;
 }
+
 
 .title__section_welcome {
   padding-top: 150px;
@@ -153,7 +155,6 @@
     align-items: center;
     width: 600px;
     height: 100px;
-    padding: 40px 74px;
   }
   
   .welcome__carousel_page {
