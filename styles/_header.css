@@ -92,6 +92,10 @@
 }
 
 /* MEDIA */
+@media screen and (max-width: 1440px) {
+  
+}
+
 @media screen and (max-width: 1024px) {
   .header__burger {
     display: block;

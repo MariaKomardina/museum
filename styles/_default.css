@@ -70,4 +70,11 @@ p {
    */
   max-width: 1440px; 
   margin: 0 auto;
+  /* background-color: rebeccapurple */
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 0 20px; 
+  }
 }
