@@ -1,0 +1,90 @@
+.welcome {
+  background-color: var(--bgDark-color);
+  padding-bottom: 60px;
+}
+
+.welcome .section__title span {
+  display: block;
+}
+
+.welcome .welcome__text {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin: 25px 0 75px;
+}
+
+.welcome__container {
+  position: relative;
+  height: 750px;
+  background-image: url('./../assets/img/Mona.jpg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0px) calc(100% - 0px);
+  background-size: contain;
+}
+
+.welcome__content {
+  position: relative;
+  top: 150px;
+}
+
+.welcome__pagination {
+  position: relative;
+  bottom: 60px;
+  float: right;
+  width: 600px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgDark-color);
+}
+
+.pagination__pages {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.pagination__points {
+  display: flex;
+  gap: 25px;
+  margin-left: 55px;
+  margin-right: 60px;
+}
+
+.pagination__element {
+  width: 16px;
+  height: 16px;
+  background-color: var(--white-color);
+}
+
+.pagination__element.active {
+  width: 16px;
+  height: 16px;
+  background-color: var(--lite-gold-color);
+}
+
+.welcome__arrow_item {
+  width: 30px;
+  height: 8px;
+  background-image: url('./../assets/svg/arrow.svg');
+}
+
+.pagination__arrow {
+  display: flex;
+  gap: 20px;
+}
+
+.welcome__arrow_right {
+  transform: rotate(180deg);
+}
