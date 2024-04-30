@@ -3,6 +3,9 @@
   padding-bottom: 60px;
 }
 
+.welcome .section__title {
+  color: var(--white-color);
+}
 .welcome .section__title span {
   display: block;
 }

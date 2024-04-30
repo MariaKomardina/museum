@@ -2,6 +2,7 @@
   --container: 1440px;
   --padding-container: 0 20px;
 
+  --black-color: #000;
   --bgDark-color: #030303;
 
   --white-color: #ffffff;
@@ -17,6 +18,7 @@ html {
   box-sizing: border-box;
   position: relative;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -77,7 +79,6 @@ p {
 }
 
 .section__title {
-  color: var(--white-color);
   font-family: Forum;
   font-size: 80px;
   font-weight: 400;
