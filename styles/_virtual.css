@@ -1,8 +1,6 @@
 .visiting {
   padding-top: 75px;
-  /* padding-bottom: 150px; */
   padding-bottom: 75px;
-  background-color: navajowhite;
 }
 
 .visiting .section__title {
@@ -20,18 +18,8 @@
 .visiting__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* row-gap: 75px; */
   row-gap: 4.6rem;
   column-gap: 4.16666667%;
-}
-
-.visiting__card_item {
-  /* display: block; */
-  /* width: 440px; */
-  /* min-width: 30.55555556%; */
-  /* max-height: 424px; */
-  /* min-height: max-content; */
-  /* max-height: max-content; */
 }
 
 .card-item__picture {
@@ -89,6 +77,10 @@
     margin-bottom: 60px;
   }
 
+  .card-item__line {
+    width: 45.45%;
+  }
+
   .visiting__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -118,5 +110,93 @@
     font-size: 16px;
     line-height: 19px;
   }
+}
 
+@media screen and (max-width: 911px) {
+  .card-item__line {
+    width: 53.57%;
+  }
+
+  .visiting__cards {
+    row-gap: 2.5rem;
+    column-gap: 6.4338;
+    padding: 0 56px;
+  }
+}
+
+@media screen and (max-width: 807px) {
+  .visiting {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .line {
+    margin-bottom: 40px;
+  }
+
+  .visiting__cards {
+    row-gap: 2.5rem;
+    column-gap: 7.69%;
+    padding: 0 3.5rem;
+  }
+
+  .card_item__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .card_item__description {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .visiting__cards {
+    column-gap: 7.69%;
+    padding: 0 2.5rem;
+    justify-items: center;
+  }
+
+  .visiting__card_item {
+    min-width: 36.842%;
+  }
+}
+
+@media screen and (max-width: 726px) {
+  .visiting__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 4.6rem;
+    column-gap: 4.16666667%;
+  }
+
+  .visiting__card_item {
+    min-width: 30.55555556%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .visiting__cards {
+    row-gap: 40px;
+  }
+
+  .visiting__card_item {
+    width: 280px;
+  }
+
+  .card_item__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .card_item__description {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .card_item__description span {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
